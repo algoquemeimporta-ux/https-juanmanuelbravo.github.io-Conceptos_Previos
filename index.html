@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Didáctica - Conceptos Previos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Programación Web Dinámica</h1>
+      <p class="meta">Arquitectura Cliente/Servidor, Diseño Centrado en el Usuario e Investigación en el Territorio</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('intro')">Introducción</a></li>
+        <li><a href="#" onclick="mostrarSeccion('cliente')">Cliente/Servidor</a></li>
+        <li><a href="#" onclick="mostrarSeccion('dcu')">Diseño Centrado en el Usuario</a></li>
+        <li><a href="#" onclick="mostrarSeccion('investigacion')">Investigación en el Territorio</a></li>
+        <li><a href="#" onclick="mostrarSeccion('referencias')">Referencias</a></li>
+      </ul>
+    </nav>
+
+    <!-- Secciones -->
+    <section id="intro" class="contenido activo">
+      <h2>Introducción</h2>
+      <p>
+        La programación web dinámica es la base de los sistemas modernos que usamos a diario, como redes sociales, 
+        plataformas educativas, aplicaciones bancarias y servicios de mensajería. A diferencia de una página estática, 
+        la web dinámica responde en tiempo real a las acciones del usuario y se conecta a bases de datos para generar contenido personalizado.
+      </p>
+      <p>
+        Para lograr esto, se combinan tres elementos clave: la <strong>arquitectura Cliente/Servidor</strong>, 
+        que define cómo fluye la información; el <strong>diseño centrado en el usuario (DCU)</strong>, que asegura 
+        que el sistema se adapte a las necesidades reales de las personas; y la <strong>investigación en el territorio</strong>, 
+        que permite identificar el contexto y condiciones del entorno para ajustar los requisitos técnicos.
+      </p>
+    </section>
+
+    <section id="cliente" class="contenido">
+      <h2>Arquitectura Cliente/Servidor</h2>
+      <p>
+        La arquitectura cliente/servidor es un modelo que organiza las aplicaciones en dos partes: 
+        el <em>cliente</em>, que es la interfaz que usa la persona (por ejemplo, un navegador o aplicación móvil), 
+        y el <em>servidor</em>, que recibe las solicitudes, realiza los cálculos, consulta la base de datos y devuelve una respuesta.
+      </p>
+      <p>
+        Este modelo es la base del Internet moderno. Cada vez que ingresas a una página web, tu computadora o celular actúa como cliente 
+        y se conecta a un servidor que puede estar en cualquier parte del mundo. 
+        El servidor procesa tu petición, busca la información solicitada y la entrega en segundos.
+      </p>
+      <p><strong>Ejemplo:</strong> al entrar a Facebook, el cliente (navegador) pide tu perfil, el servidor busca en la base de datos tu información, fotos y publicaciones, y luego las muestra en tu pantalla.</p>
+      <p>
+        Las ventajas principales de este modelo son: escalabilidad, seguridad centralizada, mantenimiento más sencillo y posibilidad 
+        de que muchos clientes se conecten a un mismo servidor. Sin este modelo, sería imposible que millones de usuarios usaran 
+        las mismas plataformas al mismo tiempo.
+      </p>
+    </section>
+
+    <section id="dcu" class="contenido">
+      <h2>Diseño Centrado en el Usuario (DCU)</h2>
+      <p>
+        El diseño centrado en el usuario es una metodología que coloca al ser humano como eje del proceso de desarrollo. 
+        No se trata solo de programar una aplicación funcional, sino de asegurarse de que sea <em>útil, fácil de usar y accesible</em> para la mayor cantidad de personas posible.
+      </p>
+      <p>
+        Un proyecto con enfoque en el usuario comienza con la investigación: conocer a los usuarios, sus necesidades, habilidades y limitaciones. 
+        Luego se crean prototipos que se prueban con usuarios reales, quienes aportan retroalimentación para mejorar la aplicación antes de lanzarla oficialmente.
+      </p>
+      <p>
+        Entre los beneficios del DCU están: mayor satisfacción del usuario, reducción de errores, aplicaciones más intuitivas, y una mayor probabilidad 
+        de éxito en el mercado, porque el producto realmente responde a lo que la gente necesita.
+      </p>
+      <p><strong>Ejemplo:</strong> si una aplicación está dirigida a adultos mayores, el diseño debe incluir letras más grandes, botones claros y navegación sencilla.</p>
+    </section>
+
+    <section id="investigacion" class="contenido">
+      <h2>Investigación en el Territorio</h2>
+      <p>
+        Antes de programar una aplicación, es necesario investigar el entorno donde se implementará. 
+        Esto se conoce como investigación en el territorio, y consiste en identificar las condiciones sociales, 
+        tecnológicas y culturales que rodean a los usuarios.
+      </p>
+      <p>
+        Por ejemplo, si una comunidad tiene baja conectividad a Internet, el sistema debe diseñarse para funcionar incluso 
+        con conexiones lentas o intermitentes. O si la mayoría de los usuarios accede desde un teléfono móvil, 
+        la aplicación debe ser ligera y adaptarse a pantallas pequeñas.
+      </p>
+      <p>
+        Esta fase evita errores en la definición de requisitos, porque asegura que las especificaciones técnicas sean 
+        realistas y adaptadas al contexto. De esta manera, se logra que las aplicaciones web realmente cumplan su propósito 
+        y sean aceptadas por la comunidad a la que van dirigidas.
+      </p>
+      <p><strong>Ejemplo:</strong> una escuela en zona rural puede necesitar una página educativa que funcione offline y con recursos descargables, 
+      ya que no todos los estudiantes cuentan con Internet en casa.</p>
+    </section>
+
+    <section id="referencias" class="contenido">
+      <h2>Referencias (APA 7.0)</h2>
+      <ul>
+        <li>Blog Infranetworking. (2019). <em>Modelo cliente servidor</em>. https://blog.infranetworking.com/modelo-cliente-servidor/</li>
+        <li>Reactive Programming. (2021). <em>La arquitectura Cliente-Servidor</em>. https://reactiveprogramming.io/blog/es/estilos-arquitectonicos/cliente-servidor</li>
+        <li>Granollers, T. (2012). <em>Diseño de sistemas interactivos centrados en el usuario</em>. Editorial UOC. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/56326?page=24</li>
+        <li>Luján, S. (2002). <em>Programación de aplicaciones web: historia, principios básicos y clientes web</em>. Universidad de Alicante. https://rua.ua.es/dspace/handle/10045/16995</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
